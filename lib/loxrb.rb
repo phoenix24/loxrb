@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 require_relative "loxrb/version"
-
+require_relative "loxrb/scanner"
+require_relative "loxrb/repl"
 
 require "readline"
 
@@ -25,6 +26,4 @@ end
 module Loxrb
   class Error < StandardError
   end
-
-  LoxLang.new.repl
 end
